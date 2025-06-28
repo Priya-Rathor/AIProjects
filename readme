@@ -1,172 +1,132 @@
+# 🧠 Generative AI & NLP Projects by Priya Rathor
 
-# 🤖 Generative AI & NLP Experiments — Priya Rathor
+Welcome to my repository focused on **Generative AI**, **Natural Language Processing (NLP)**, and **Deep Learning** using tools like **OpenAI**, **Hugging Face**, and **Weaviate**. This is a hands-on, project-based journey where I explore the latest in transformer models, text/image generation, semantic search, and more.
 
-Welcome to my **Generative AI + NLP project repository** where I’ve explored modern LLMs, transformers, embeddings, vector stores, and multimodal models using **Hugging Face**, **OpenAI**, and **Weaviate**.
-
-This repo contains several Jupyter notebooks and Python scripts that cover key applications in **natural language processing**, **computer vision**, and **large language models** (LLMs).
-
----
-
-## 📁 Project Structure
-
-| File / Notebook                  | Description |
-|----------------------------------|-------------|
-| `HandwrittenDigit.ipynb`        | CNN-based image classifier for MNIST handwritten digits |
-| `Huggingface.ipynb/.py`         | Using Hugging Face Transformers (text classification, inference) |
-| `huggingface.ipynb`             | Alternate experiment with different models (NLP tasks) |
-| `TextToImage.ipynb`             | Generate images from text prompts using models like DALL·E / Stable Diffusion |
-| `Text_summarization.ipynb`      | Summarize long articles using pretrained transformers (T5, BART) |
-| `WEAVIATE.ipynb`                | Vector search engine setup using Weaviate + semantic document search |
-| `openaiDemo.ipynb`              | GPT-3/GPT-4 demo with OpenAI API for chatbot, summarization |
-| `requirements.txt`              | Required libraries for all notebooks and scripts |
-| `readme`                        | Basic documentation placeholder (now replaced with this) |
+> 🚀 Built using Python, Google Colab, Hugging Face Transformers, OpenAI API, and Weaviate vector database.
 
 ---
 
-## 🚀 What You’ll Learn
+## 📚 Contents
 
-### ✅ Hugging Face Transformers
-- Load pretrained models like `distilBERT`, `BART`, `GPT-2`
-- Run text classification, summarization, generation
-- Tokenization and inference pipeline
-
-### ✅ Text Summarization
-- Summarizing large documents
-- Model used: T5, Pegasus, BART
-- Input truncation and length control
-
-### ✅ Text-to-Image
-- Generate synthetic images from descriptions
-- Models explored: DALL·E, Stable Diffusion (via 🤗 pipelines)
-
-### ✅ Embedding + Search with Weaviate
-- Vector store setup
-- Upload text/documents to Weaviate
-- Perform semantic similarity search
-
-### ✅ OpenAI Integration
-- Use GPT models (`text-davinci-003`, `gpt-3.5-turbo`, `gpt-4`)
-- Prompt engineering
-- Text generation, Q&A chatbot
-
-### ✅ Image Classification (MNIST)
-- Built CNN model using Keras/TensorFlow
-- Achieved >97% accuracy on test handwritten digit data
+| File/Notebook                  | Description |
+|-------------------------------|-------------|
+| `HandwrittenDigit.ipynb`      | CNN-based digit recognition using MNIST dataset |
+| `Huggingface.ipynb / .py`     | Experiments with Hugging Face Transformers — classification, generation |
+| `huggingface.ipynb`           | Alternate experiments with tokenizers, pipelines, and fine-tuning |
+| `TextToImage.ipynb`           | Generate images from text prompts using DALL·E / Stable Diffusion |
+| `Text_summarization.ipynb`    | Summarize long-form text using T5, BART |
+| `WEAVIATE.ipynb`              | Vector search using Weaviate with document embeddings |
+| `openaiDemo.ipynb`            | Play with GPT-3.5/4: prompt engineering, QA, code, creative writing |
+| `requirements.txt`            | List of all Python dependencies used |
+| `readme`                      | Initial draft before this README |
 
 ---
 
-## 🔧 Setup Instructions
+## 🔍 What You’ll Learn
 
-> You can run most notebooks either on **Google Colab** or your local system.
+- How to interact with OpenAI’s GPT APIs
+- Using Hugging Face for:
+  - Text classification
+  - Summarization
+  - Tokenization
+  - Image generation
+- Deploying vector databases like Weaviate for semantic search
+- CNN implementation in TensorFlow/Keras
+- Running models efficiently using Google Colab
 
-### ✅ Clone the Repository
+---
+
+## 🛠️ Setup Instructions
+
+> Preferably run the notebooks in Google Colab for hassle-free environment management.
+
+### 🔁 Clone the Repository
 
 ```bash
 git clone https://github.com/Priya-Rathor/generative-ai-nlp.git
 cd generative-ai-nlp
 ````
 
-### ✅ Install Dependencies
+### 📦 Install Dependencies
 
-Create a virtual environment (optional):
-
-```bash
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-```
-
-Install packages:
+You can install the required libraries locally using:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-If you're running on **Colab**, install only the libraries you need per notebook (often already pre-installed).
+Or install them one-by-one inside Colab based on the notebook you're using.
 
 ---
 
-## 🔐 API Keys (for OpenAI, HuggingFace, Weaviate)
+## 🔐 API Keys Required
 
-* For OpenAI:
+Some notebooks require API access.
 
-  * Create account at [https://platform.openai.com](https://platform.openai.com)
-  * Get API key and use:
+* **OpenAI**
 
-    ```python
-    openai.api_key = "your-api-key"
-    ```
+  * Get your key from: [platform.openai.com](https://platform.openai.com/)
+  * Use: `openai.api_key = "your_key"`
 
-* For Hugging Face:
+* **Hugging Face**
 
-  * Sign up at [https://huggingface.co](https://huggingface.co)
-  * Use token via CLI or `transformers` pipeline
+  * Create an account at [huggingface.co](https://huggingface.co/)
+  * Use the key via `transformers` CLI or set in notebook
 
-* For Weaviate:
+* **Weaviate**
 
-  * Use `WCS` (Weaviate Cloud Service) or local Docker
-  * Set up `.env` or directly insert into code
+  * Use Weaviate Cloud Service (WCS) or local Docker instance
+  * Configure `.env` or inline keys
 
 ---
 
-## 📦 Requirements
+## 📌 Key Topics Practiced
 
-Main dependencies include:
-
-```text
-transformers
-openai
-weaviate-client
-torch
-tensorflow
-datasets
-scikit-learn
-matplotlib
-pandas
-```
-
-> Full list in `requirements.txt`
+* 🔡 Text Generation and Summarization
+* 🖼️ Text-to-Image with Diffusion Models
+* 🧠 Embedding + Vector Similarity Search
+* 🧮 Digit Recognition with CNNs
+* 💬 LLM Prompt Engineering
+* 🤗 Hugging Face Transformers and Pipelines
+* 🧰 Tools: Google Colab, Python, OpenAI, Weaviate, TensorFlow, Matplotlib
 
 ---
 
-## 🧠 Key Concepts Practiced
+## 🧪 Sample Results
 
-* LLM API Usage (HuggingFace, OpenAI)
-* Prompt Engineering
-* Summarization, Generation, Q\&A
-* Vector Embedding + Semantic Search
-* Image Generation (Text → Image)
-* CNN for Digit Classification
-
----
-
-## 📸 Sample Outputs
-
-| Task                 | Example                                    |
-| -------------------- | ------------------------------------------ |
-| Text Summarization   | 📄 → ✂️ Summarized                         |
-| Text to Image        | "A house in the mountains at sunset" → 🏞️ |
-| Chat with GPT        | "Explain AI like I'm 5" → 💬               |
-| Semantic Search      | Query → Top 5 similar docs                 |
-| Digit Classification | '7' → ✅ Predicted correctly                |
+| Task               | Example Result                                                                              |
+| ------------------ | ------------------------------------------------------------------------------------------- |
+| Text Summarization | `"A long story..." → "Summary in 2-3 lines"`                                                |
+| Image Generation   | `"A panda riding a bicycle"` → 🐼 🚴‍♂️                                                     |
+| GPT Completion     | `"Tell me a joke"` → `"Why don’t scientists trust atoms? Because they make up everything!"` |
+| Digit Prediction   | Input: handwritten '5' → Predicted: `5`                                                     |
+| Semantic Search    | Query: `"AI in healthcare"` → Returns top 5 matching docs                                   |
 
 ---
 
 ## 🙋‍♀️ About Me
 
-Hi! I’m **Priya Rathor**, exploring the field of AI through hands-on experimentation with modern tools like **OpenAI**, **HuggingFace**, and **Weaviate**.
+Hi, I’m **Priya Rathor**, a passionate learner and developer in the AI/ML space. This repository is a showcase of my self-paced learning and experimentation with the latest NLP and LLM technologies.
+Let’s connect on [LinkedIn](https://www.linkedin.com/) (Add your link if you want!).
 
-This repo is my personal playground to test ideas, learn APIs, and build smart systems. 😊
+---
+
+## 🌟 How to Contribute
+
+If you’re a fellow learner:
+
+* Fork this repo
+* Try out or improve the notebooks
+* Suggest fixes or ideas via Pull Requests
+
+And don’t forget to ⭐ this repo if it helped you!
 
 ---
 
-## ⭐️ Contributions / Suggestions
+## 📄 License
 
-If you're also learning:
-
-* Fork the repo
-* Add your notebooks
-* Submit a PR to collaborate
-
-Or simply ⭐ this repository if you found it helpful!
+This repository is open-source and free to use for learning purposes.
 
 ---
+
+
